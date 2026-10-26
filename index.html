@@ -1,189 +1,245 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root{
+    --gold:#C8A96B;
+    --gold-dark:#B28A45;
+    --cream:#FAF8F4;
+    --white:#ffffff;
+    --text:#1e1e1e;
+    --muted:#666666;
+}
 
-<title>ADHD Daily Planner 2027™</title>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-<meta name="description"
-content="Premium ADHD planner, productivity planner and printable planning systems.">
+html{
+    scroll-behavior:smooth;
+}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.7;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+.container{
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
 
-<link rel="stylesheet" href="style.css">
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(
+        135deg,
+        #fcfaf7 0%,
+        #f6efe2 100%
+    );
+}
 
-</head>
+.luxury-label{
+    color:var(--gold);
+    font-size:0.9rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    font-weight:700;
+    margin-bottom:25px;
+}
 
-<body>
+h1{
+    font-family:'Playfair Display',serif;
+    font-size:4.5rem;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:var(--text);
+}
 
-<header class="hero">
+.hero-subtitle{
+    font-size:1.8rem;
+    color:#555;
+    margin-bottom:25px;
+}
 
-<div class="container">
+.hero-description{
+    max-width:800px;
+    margin:0 auto;
+    font-size:1.15rem;
+    color:var(--muted);
+}
 
-<div class="luxury-label">
-LUXURY DIGITAL PLANNING COLLECTION
-</div>
+.hero-benefits{
+    margin-top:30px;
+    font-size:1.1rem;
+    font-weight:600;
+}
 
-<h1>ADHD Daily Planner 2027™</h1>
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
 
-<p class="hero-subtitle">
-Organize Your Mind. Focus Your Day. Achieve Your Goals.
-</p>
+.btn-primary{
+    display:inline-block;
+    padding:18px 36px;
+    background:linear-gradient(
+        135deg,
+        #D6B370,
+        #C8A96B,
+        #B28A45
+    );
+    color:white;
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:700;
+    transition:all .3s ease;
+    box-shadow:0 10px 30px rgba(200,169,107,.35);
+}
 
-<p class="hero-description">
-A premium 180-page planning system designed to help you stay organized,
-build better habits, improve focus and achieve meaningful goals.
-</p>
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 18px 40px rgba(200,169,107,.45);
+}
 
-<div class="hero-benefits">
-✓ 180 Pages • ✓ Instant Download • ✓ Printable PDF • ✓ Digital Use
-</div>
+.btn-secondary{
+    display:inline-block;
+    padding:18px 36px;
+    background:white;
+    border:2px solid var(--gold);
+    color:var(--text);
+    text-decoration:none;
+    border-radius:999px;
+    font-weight:700;
+    transition:all .3s ease;
+}
 
-<div class="hero-buttons">
+.btn-secondary:hover{
+    background:var(--gold);
+    color:white;
+}
 
-<a href="https://duturadu.gumroad.com/l/ekvvf"
-target="_blank"
-class="btn-primary">
-🧠 Get ADHD Planner
-</a>
+.section{
+    padding:90px 0;
+}
 
-<a href="https://duturadu.gumroad.com/l/UltimateLuxuryWeeklyPlannerCollection"
-target="_blank"
-class="btn-secondary">
-✨ Planner Collection
-</a>
+.section h2{
+    text-align:center;
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    margin-bottom:50px;
+}
 
-</div>
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
 
-</div>
+.card{
+    background:white;
+    padding:30px;
+    border-radius:24px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
 
-</header>
+.card:hover{
+    transform:translateY(-8px);
+}
 
-<section class="section">
+.card h3{
+    font-family:'Playfair Display',serif;
+    margin-bottom:15px;
+    font-size:1.7rem;
+}
 
-<div class="container">
+.card p{
+    margin-bottom:20px;
+    color:var(--muted);
+}
 
-<h2>Featured Products</h2>
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
 
-<div class="product-grid">
+.gallery img{
+    width:100%;
+    display:block;
+    border-radius:20px;
+    object-fit:cover;
+    aspect-ratio:4/5;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:all .3s ease;
+}
 
-<div class="card">
-<h3>ADHD Daily Planner 2027</h3>
+.gallery img:hover{
+    transform:translateY(-6px);
+}
 
-<p>
-180-page ADHD productivity system with habit tracking,
-focus tracking and goal planning.
-</p>
+.cta{
+    background:white;
+    text-align:center;
+    border-radius:30px;
+}
 
-<a href="https://duturadu.gumroad.com/l/ekvvf"
-target="_blank"
-class="btn-primary">
-Download Now
-</a>
+.cta p{
+    max-width:700px;
+    margin:0 auto 30px;
+    color:var(--muted);
+    font-size:1.1rem;
+}
 
-</div>
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
 
-<div class="card">
-<h3>Time Blocking Planner</h3>
+footer a{
+    color:var(--gold);
+    text-decoration:none;
+}
 
-<p>
-Organize your day and maximize productivity using
-proven time-blocking techniques.
-</p>
+footer a:hover{
+    text-decoration:underline;
+}
 
-<a href="https://duturadu.gumroad.com/l/time-blocking-planner"
-target="_blank"
-class="btn-primary">
-Get Planner
-</a>
+@media(max-width:768px){
 
-</div>
+    h1{
+        font-size:3rem;
+    }
 
-<div class="card">
-<h3>Weekly Planner Collection</h3>
+    .hero-subtitle{
+        font-size:1.4rem;
+    }
 
-<p>
-Printable luxury planner collection designed for
-productivity and organization.
-</p>
+    .section h2{
+        font-size:2.2rem;
+    }
 
-<a href="https://duturadu.gumroad.com/l/UltimateLuxuryWeeklyPlannerCollection"
-target="_blank"
-class="btn-primary">
-View Collection
-</a>
+    .hero{
+        padding:90px 20px;
+    }
 
-</div>
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
 
-</div>
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+        max-width:320px;
+        text-align:center;
+    }
 
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2>Planner Gallery</h2>
-
-<div class="gallery">
-
-<img src="images/adhd-daily-planner.webp"
-alt="ADHD Daily Planner">
-
-<img src="images/time-blocking-planner.webp"
-alt="Time Blocking Planner">
-
-<img src="images/ultimate-luxury-planner.webp"
-alt="Ultimate Luxury Planner">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section cta">
-
-<div class="container">
-
-<h2>Ready To Transform Your Productivity?</h2>
-
-<p>
-Build better habits, improve focus and achieve your goals.
-</p>
-
-<br>
-
-<a href="https://duturadu.gumroad.com/l/ekvvf"
-target="_blank"
-class="btn-primary">
-🧠 Get ADHD Planner
-</a>
-
-</div>
-
-</section>
-
-<footer>
-
-<p>
-© 2026 Dutu Radu Digital Planners
-</p>
-
-<p style="margin-top:15px;">
-<a href="https://duturadu.gumroad.com"
-target="_blank">
-Visit Our Gumroad Store
-</a>
-</p>
-
-</footer>
-
-</body>
-</html>
+}
