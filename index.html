@@ -1,46 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>ADHD Daily Planner 2027™ | Premium Planning System</title>
+<title>ADHD Daily Planner 2027™</title>
 
 <meta name="description"
-content="Premium ADHD planners, productivity planners, time blocking planners and printable planning systems.">
+content="Premium ADHD planners, productivity planners, wellness planners and printable planning systems.">
 
-<meta property="og:title"
-content="ADHD Daily Planner 2027™">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<meta property="og:description"
-content="Organize Your Mind. Focus Your Day. Achieve Your Goals.">
-
-<meta property="og:type"
-content="website">
-
-<link rel="preconnect"
-href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-href="https://fonts.gstatic.com"
-crossorigin>
-
-<link
-href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
-rel="stylesheet">
-
-<link rel="icon"
-type="image/png"
-href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-/* CSS-ul tău premium aici */
+:root{
+--gold:#C8A96B;
+--gold-dark:#B28A45;
+--cream:#FAF8F4;
+--text:#1e1e1e;
+--muted:#666;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--cream);
+color:var(--text);
+line-height:1.7;
+}
+
+header{
+padding:120px 20px;
+text-align:center;
+background:linear-gradient(135deg,#fcfaf7,#f6efe2);
+}
+
+.luxury-label{
+color:var(--gold);
+font-size:.85rem;
+letter-spacing:3px;
+text-transform:uppercase;
+font-weight:700;
+margin-bottom:20px;
+}
+
+h1{
+font-family:'Playfair Display',serif;
+font-size:4rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero-subtitle{
+font-size:1.5rem;
+margin-bottom:20px;
+color:#555;
+}
+
+.hero-description{
+max-width:800px;
+margin:auto;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+margin-top:30px;
+}
+
+.gumroad-premium-btn{
+display:inline-block;
+padding:18px 35px;
+background:linear-gradient(
+135deg,
+#D6B370,
+#C8A96B,
+#B28A45
+);
+color:white;
+font-weight:700;
+text-decoration:none;
+border-radius:999px;
+transition:.3s;
+}
+
+.gumroad-premium-btn:hover{
+transform:translateY(-3px);
+}
+
+.gumroad-secondary-btn{
+display:inline-block;
+padding:18px 35px;
+background:white;
+border:2px solid #C8A96B;
+border-radius:999px;
+color:#222;
+font-weight:700;
+text-decoration:none;
+}
+
+.hero-benefits{
+margin-top:25px;
+font-weight:600;
+}
+
+section{
+padding:80px 10%;
+}
+
+.section-title{
+font-family:'Playfair Display',serif;
+font-size:2.8rem;
+margin-bottom:50px;
+text-align:center;
+}
+
+.features{
+background:white;
+padding:40px;
+border-radius:20px;
+}
+
+.features ul{
+list-style:none;
+display:grid;
+gap:15px;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+
+.features li{
+background:#fafafa;
+padding:15px;
+border-radius:12px;
+}
+
+.products{
+display:grid;
+gap:25px;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+background:linear-gradient(135deg,#f4d188,#c8a96b);
+border-radius:999px;
+font-size:.75rem;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.card h3{
+font-family:'Playfair Display',serif;
+margin-bottom:15px;
+}
+
+.price{
+font-size:2rem;
+font-weight:700;
+color:var(--gold-dark);
+margin:20px 0;
+}
+
+.cta{
+background:white;
+padding:70px 40px;
+border-radius:25px;
+text-align:center;
+}
+
+footer{
+background:#111;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+footer a{
+color:var(--gold);
+text-decoration:none;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:2.8rem;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+}
 
 </style>
-
 </head>
 
 <body>
@@ -60,9 +230,13 @@ Organize Your Mind. Focus Your Day. Achieve Your Goals.
 </div>
 
 <p class="hero-description">
-A premium 180-page planning system designed for productivity,
-focus, personal growth and ADHD-friendly organization.
+A premium 180-page planning system designed to help you stay organized,
+build better habits, improve focus and achieve meaningful goals.
 </p>
+
+<div class="hero-benefits">
+✓ 180 Pages • ✓ Instant Download • ✓ Printable PDF • ✓ Digital Use
+</div>
 
 <div class="hero-buttons">
 
@@ -81,3 +255,231 @@ class="gumroad-secondary-btn">
 </div>
 
 </header>
+
+<section>
+
+<h2 class="section-title">
+Why Choose Our Planners?
+</h2>
+
+<div class="features">
+
+<ul>
+<li>✅ Premium Design</li>
+<li>✅ ADHD Friendly Layout</li>
+<li>✅ Printable PDF</li>
+<li>✅ Digital Planning</li>
+<li>✅ Goal Tracking</li>
+<li>✅ Habit Tracking</li>
+<li>✅ Focus Management</li>
+<li>✅ Instant Download</li>
+</ul>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Featured Products
+</h2>
+
+<div class="products">
+
+<div class="card">
+
+<div class="badge">
+FEATURED
+</div>
+
+<h3>
+ADHD Daily Planner 2027
+</h3>
+
+<p>
+180 pages of ADHD-friendly planning, focus tracking,
+goal setting, habit building and productivity systems.
+</p>
+
+<div class="price">
+$19
+</div>
+
+<a href="https://duturadu.gumroad.com/l/ekvvf"
+target="_blank"
+class="gumroad-premium-btn">
+Download Now
+</a>
+
+</div>
+
+<div class="card">
+
+<div class="badge">
+BEST SELLER
+</div>
+
+<h3>
+Ultimate Luxury Weekly Planner Collection
+</h3>
+
+<p>
+Premium weekly planner collection designed for productivity,
+organization and personal growth.
+</p>
+
+<div class="price">
+$12
+</div>
+
+<a href="https://duturadu.gumroad.com/l/UltimateLuxuryWeeklyPlannerCollection"
+target="_blank"
+class="gumroad-premium-btn">
+Get Collection
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+Time Blocking Planner
+</h3>
+
+<p>
+Organize your days and maximize productivity through proven
+time-blocking systems.
+</p>
+
+<div class="price">
+$12
+</div>
+
+<a href="https://duturadu.gumroad.com/l/time-blocking-planner"
+target="_blank"
+class="gumroad-premium-btn">
+Get Planner
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+Weekly Planner Bundle
+</h3>
+
+<p>
+20 printable weekly planners ready for instant download.
+</p>
+
+<div class="price">
+$9.89
+</div>
+
+<a href="https://duturadu.gumroad.com/l/ruqwxx"
+target="_blank"
+class="gumroad-premium-btn">
+Download Bundle
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>
+Self-Care Planner
+</h3>
+
+<p>
+Premium self-care and wellness planner with printable pages.
+</p>
+
+<div class="price">
+$8.50
+</div>
+
+<a href="https://duturadu.gumroad.com/l/erbrx"
+target="_blank"
+class="gumroad-premium-btn">
+Start Journey
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+Inside The ADHD Planner
+</h2>
+
+<div class="features">
+
+<ul>
+<li>🧠 ADHD Strength Assessment</li>
+<li>🎯 Goal Planning</li>
+<li>📅 Monthly Planning</li>
+<li>📖 Weekly Planning</li>
+<li>✅ Daily Planning</li>
+<li>📊 Habit Tracker</li>
+<li>⚡ Focus Tracker</li>
+<li>😊 Mood Tracker</li>
+<li>💊 Medication
+</div>
+
+</section>
+
+<section>
+
+<div class="cta">
+
+<h2 class="section-title">
+Transform The Way You Plan
+</h2>
+
+<p>
+Create structure, reduce overwhelm and build better habits
+with premium planning systems designed for real life.
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://duturadu.gumroad.com/l/ekvvf"
+target="_blank"
+class="gumroad-premium-btn">
+🧠 Get ADHD Planner
+</a>
+
+<a href="https://duturadu.gumroad.com/l/UltimateLuxuryWeeklyPlannerCollection"
+target="_blank"
+class="gumroad-secondary-btn">
+✨ Browse Collection
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Dutu Radu Digital Planners
+</p>
+
+<p style="margin-top:15px;">
+https://duturadu.gumroad.com
+Visit Our Gumroad Store
+</a>
+</p>
+
+</footer>
+
+</body>
+</html>
